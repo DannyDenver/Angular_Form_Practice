@@ -11,6 +11,7 @@ export class AppComponent {
   @ViewChild('f') signupForm: NgForm // access form before submit, onSubmit doesnt need parameter
   defaultQuestion = 'teacher';  
   answer = '';
+  genders = ['male', 'female'];
 
   suggestUserName() {
     const suggestedName = 'Superuser';
