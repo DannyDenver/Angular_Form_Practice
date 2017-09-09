@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    FormsModule /// add to create form - selector <form.
   ],
   providers: [],
   bootstrap: [AppComponent]
