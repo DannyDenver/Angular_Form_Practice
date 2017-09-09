@@ -8,7 +8,10 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('f') signupForm: NgForm // access form before submit, onSubmit doesnt need parameter 
+  @ViewChild('f') signupForm: NgForm // access form before submit, onSubmit doesnt need parameter
+  defaultQuestion = 'teacher';  
+  answer = '';
+
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
@@ -17,7 +20,7 @@ export class AppComponent {
   //   console.log("submitted!")
   //   console.log(form);
   // }
-  
+
   onSubmit(){
     console.log(this.signupForm);
   }
